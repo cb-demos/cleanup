@@ -33,7 +33,7 @@ spec:
         stage('Cleanup') {
             steps {
                 container('cleanup') {
-                    sh 'python cleanup.py'
+                    sh 'python expired_releases.py'
                 }
             }
         }
