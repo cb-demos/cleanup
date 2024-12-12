@@ -5,6 +5,10 @@ RUN apk add --no-cache \
     helm \
     kubectl
 
+RUN adduser -D cleaner
+
+USER cleaner
+
 WORKDIR /app
 
 COPY . .
