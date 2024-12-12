@@ -8,7 +8,7 @@ metadata:
     labels:
         app: helm-cleanup
 spec:
-    serviceAccountName: jenkins
+    serviceAccountName: cleanup-sa
     containers:
     - name: cleanup
       image: gcr.io/core-flow-research/cleanup:1.1.0
